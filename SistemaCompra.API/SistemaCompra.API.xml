@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SistemaCompra.API</name>
+    </assembly>
+    <members>
+        <member name="M:SistemaCompra.API.Produto.ProdutoController.Obter(System.Guid)">
+            <summary>
+            Obtem um produto por Id.
+            </summary>
+            <param name="id">idenificador do produto</param>
+        </member>
+        <member name="M:SistemaCompra.API.Produto.ProdutoController.CadastrarProduto(SistemaCompra.Application.Produto.Command.RegistrarProduto.RegistrarProdutoCommand)">
+             <summary>
+            Cadastro de um produto.
+             </summary>
+             <param name="registrarProdutoCommand">modelo registro de produto</param>
+             <response code="201">Requisição criada com sucesso</response>
+             <response code="400">sintaxe invalida values</response>
+             <response code="404">não encontrado</response>
+             <response code="500">Erro encontrdo</response>
+        </member>
+        <member name="M:SistemaCompra.API.Produto.ProdutoController.AtualizarPreco(SistemaCompra.Application.Produto.Command.AtualizarPreco.AtualizarPrecoCommand)">
+             <summary>
+            Atualizar produto.
+             </summary>
+             <param name="Id">identificador do produto</param>
+             <param name="Preco">preço do produto</param>      
+             <response code="200">Requisição bem sucedida</response>
+             <response code="400">sintaxe invalida values</response>
+             <response code="404">não encontrado</response>
+             <response code="500">Erro encontrdo</response>
+        </member>
+        <member name="M:SistemaCompra.API.Produto.SolicitacaoCompraController.RegistrarCompra(SistemaCompra.Application.SolicitacaoCompra.Command.RegistrarCompra.RegistrarCompraCommand)">
+             <summary>
+            Registrar uma nova compra.
+             </summary>
+             <param name="registrarCompraCommand">modelo registro de compras</param>               
+             <response code="201">Requisição criada com sucesso</response>
+             <response code="400">sintaxe invalida values</response>
+             <response code="404">não encontrado</response>
+             <response code="500">Erro encontrdo</response>
+        </member>
+    </members>
+</doc>
